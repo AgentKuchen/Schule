@@ -56,6 +56,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Kartnum = new System.Windows.Forms.TextBox();
             this.error_Katnum = new System.Windows.Forms.Label();
+            this.InputNumpad = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button18
@@ -327,13 +330,44 @@
             this.error_Katnum.Size = new System.Drawing.Size(44, 16);
             this.error_Katnum.TabIndex = 50;
             this.error_Katnum.Text = "label2";
-          
+            // 
+            // InputNumpad
+            // 
+            this.InputNumpad.AutoSize = true;
+            this.InputNumpad.BackColor = System.Drawing.SystemColors.Window;
+            this.InputNumpad.Location = new System.Drawing.Point(372, 103);
+            this.InputNumpad.Name = "InputNumpad";
+            this.InputNumpad.Size = new System.Drawing.Size(87, 16);
+            this.InputNumpad.TabIndex = 51;
+            this.InputNumpad.Text = "InputNumpad";
+            this.InputNumpad.Click += new System.EventHandler(this.InputNumpad_Click);
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.SystemColors.Window;
+            this.label2.Location = new System.Drawing.Point(322, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(183, 23);
+            this.label2.TabIndex = 52;
+            this.label2.Text = "Geben sie ihren Pin an:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(683, 416);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(143, 16);
+            this.label3.TabIndex = 53;
+            this.label3.Text = "Leon Raphael Wagner";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(873, 484);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.InputNumpad);
             this.Controls.Add(this.error_Katnum);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Kartnum);
@@ -399,6 +433,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Kartnum;
         private System.Windows.Forms.Label error_Katnum;
+        private System.Windows.Forms.Label InputNumpad;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
