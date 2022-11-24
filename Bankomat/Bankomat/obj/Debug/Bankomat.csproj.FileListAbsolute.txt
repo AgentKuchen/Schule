@@ -1,0 +1,11 @@
+E:\Programieren\github neu\Schule\Schule\Bankomat\Bankomat\bin\Debug\Bankomat.exe.config
+E:\Programieren\github neu\Schule\Schule\Bankomat\Bankomat\bin\Debug\Bankomat.exe
+E:\Programieren\github neu\Schule\Schule\Bankomat\Bankomat\bin\Debug\Bankomat.pdb
+E:\Programieren\github neu\Schule\Schule\Bankomat\Bankomat\obj\Debug\Bankomat.csproj.AssemblyReference.cache
+E:\Programieren\github neu\Schule\Schule\Bankomat\Bankomat\obj\Debug\Bankomat.csproj.SuggestedBindingRedirects.cache
+E:\Programieren\github neu\Schule\Schule\Bankomat\Bankomat\obj\Debug\Bankomat.Form1.resources
+E:\Programieren\github neu\Schule\Schule\Bankomat\Bankomat\obj\Debug\Bankomat.Properties.Resources.resources
+E:\Programieren\github neu\Schule\Schule\Bankomat\Bankomat\obj\Debug\Bankomat.csproj.GenerateResource.cache
+E:\Programieren\github neu\Schule\Schule\Bankomat\Bankomat\obj\Debug\Bankomat.csproj.CoreCompileInputs.cache
+E:\Programieren\github neu\Schule\Schule\Bankomat\Bankomat\obj\Debug\Bankomat.exe
+E:\Programieren\github neu\Schule\Schule\Bankomat\Bankomat\obj\Debug\Bankomat.pdb
