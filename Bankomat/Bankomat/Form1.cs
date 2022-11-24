@@ -44,16 +44,26 @@ namespace Bankomat
         // Buttons auf der Seite
         private void button1_Click(object sender, EventArgs e)
         {
-            int Kontostand= int.Parse(arrtxt[0]);
-            //fügt 10 euro hinzu 
+            int Kontostand= int.Parse(arrtxt[2]);
+            //Geht ins Hinzufüg Menü rein
             if (button[0] == 0)
             {
                 buttonPress(1);
                 Loadform(button);
+               
+            }
+            //zieht Geld ab
+            else if (button[0] == 4)
+            {
+                Loadform(button);
+                Kontostand -= 10;
+            }
+            //fügt Geld hinzu 
+            else if (button[0] == 1)
+            {
                 Kontostand += 10;
             }
-            else if (button[0] == 4)
-                Kontostand -= 10;
+                
 
             arrtxt[2] = Kontostand.ToString(); 
                
@@ -63,15 +73,21 @@ namespace Bankomat
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int Kontostand = int.Parse(arrtxt[0]);
-
+            int Kontostand = int.Parse(arrtxt[2]);
+            //fügt Geld hinzu 
             if (button[0] == 1)
             {
                 Loadform(button);
                 Kontostand += 20;
-               
-            }
+                
 
+            }
+            //zieht Geld ab
+            else if (button[0] == 4)
+            {
+                Loadform(button);
+                Kontostand -= 20;
+            }
 
 
             arrtxt[2] = Kontostand.ToString();
@@ -81,8 +97,8 @@ namespace Bankomat
 
         private void button3_Click(object sender, EventArgs e)
         {
-            int Kontostand = int.Parse(arrtxt[0]);
-
+            int Kontostand = int.Parse(arrtxt[2]);
+            //fügt Geld hinzu 
             if (button[0] == 1)
             {
                 Loadform(button);
@@ -92,40 +108,60 @@ namespace Bankomat
             else if(button[0] == 0)
             {
                 button[0] = 3;
+                arrtxt[2] = Kontostand.ToString();
                 Loadform(button);
             }
-                
-
-
+            //zieht Geld ab
+            else if (button[0] == 4)
+            {
+                Loadform(button);
+                Kontostand -= 50;
+            }
 
             arrtxt[2] = Kontostand.ToString();
+
+
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            int Kontostand = int.Parse(arrtxt[0]);
-
+            int Kontostand = int.Parse(arrtxt[2]);
+            //fügt Geld hinzu 
             if (button[0] == 1)
             {
                 Loadform(button);
                 Kontostand += 100;
 
             }
-
-
+            //Geht ins Abheb Menü rein
+            else if (button[0] == 0 )
+            {
+                buttonPress(4);
+                Loadform(button);
+                
+            }
+            //zieht Geld ab
+            else if (button[0] == 4)
+                Kontostand -= 100;
 
             arrtxt[2] = Kontostand.ToString();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            int Kontostand = int.Parse(arrtxt[0]);
-
+            int Kontostand = int.Parse(arrtxt[2]);
+            //fügt Geld hinzu 
             if (button[0] == 1)
             {
                 Loadform(button);
                 
 
+            }
+            //zieht Geld ab
+            else if (button[0] == 4)
+            {
+                Loadform(button);
+                
             }
 
 
@@ -135,11 +171,19 @@ namespace Bankomat
 
         private void button6_Click(object sender, EventArgs e)
         {
+            if (button[0] == 0)
+            {
+                button[0] = 6;
+                Loadform(button);
+
+            }
             button[0] = 0;
             Loadform(button);
+            
         }
         private void Kartnum_TextChanged(object sender, EventArgs e)
         {
+            
             string katnume= Kartnum.Text;
             IsKatnumCorrect(katnume);
             
@@ -364,8 +408,8 @@ namespace Bankomat
                 bl5.Text = "";
                 bl6.Text = "Abbrechen";
                 error_Katnum.Text = "";
-                InputNumpad.Text = "";
-                label2.Text = "Ihr Kontostand beträgt"+arrtxt[2];
+                InputNumpad.Text = arrtxt[2].ToString();
+                label2.Text = "Ihr Kontostand beträgt:";
             }
             else if (l == 6)
             {

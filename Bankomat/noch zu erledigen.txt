@@ -1,0 +1,4 @@
+Custom Geldbeträge eingeben
+Pin bug fixen( das man rein kommt egal welchen pin man eingibt)
+Geld bleibt gespeichert
+geld überweisen auf andere Karten
