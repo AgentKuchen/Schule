@@ -9,3 +9,23 @@ E:\Programieren\github neu\Schule\Schule\Bankomat\Bankomat\obj\Debug\Bankomat.cs
 E:\Programieren\github neu\Schule\Schule\Bankomat\Bankomat\obj\Debug\Bankomat.csproj.CoreCompileInputs.cache
 E:\Programieren\github neu\Schule\Schule\Bankomat\Bankomat\obj\Debug\Bankomat.exe
 E:\Programieren\github neu\Schule\Schule\Bankomat\Bankomat\obj\Debug\Bankomat.pdb
+K:\Bankomat\Bankomat\bin\Debug\Bankomat.exe.config
+K:\Bankomat\Bankomat\bin\Debug\Bankomat.exe
+K:\Bankomat\Bankomat\bin\Debug\Bankomat.pdb
+K:\Bankomat\Bankomat\obj\Debug\Bankomat.Form1.resources
+K:\Bankomat\Bankomat\obj\Debug\Bankomat.Properties.Resources.resources
+K:\Bankomat\Bankomat\obj\Debug\Bankomat.csproj.GenerateResource.cache
+K:\Bankomat\Bankomat\obj\Debug\Bankomat.exe
+K:\Bankomat\Bankomat\obj\Debug\Bankomat.pdb
+K:\Bankomat\Bankomat\obj\Debug\Bankomat.csprojAssemblyReference.cache
+F:\Bankomat\Bankomat\bin\Debug\Bankomat.exe.config
+F:\Bankomat\Bankomat\bin\Debug\Bankomat.exe
+F:\Bankomat\Bankomat\bin\Debug\Bankomat.pdb
+F:\Bankomat\Bankomat\obj\Debug\Bankomat.csproj.AssemblyReference.cache
+F:\Bankomat\Bankomat\obj\Debug\Bankomat.csproj.SuggestedBindingRedirects.cache
+F:\Bankomat\Bankomat\obj\Debug\Bankomat.Form1.resources
+F:\Bankomat\Bankomat\obj\Debug\Bankomat.Properties.Resources.resources
+F:\Bankomat\Bankomat\obj\Debug\Bankomat.csproj.GenerateResource.cache
+F:\Bankomat\Bankomat\obj\Debug\Bankomat.csproj.CoreCompileInputs.cache
+F:\Bankomat\Bankomat\obj\Debug\Bankomat.exe
+F:\Bankomat\Bankomat\obj\Debug\Bankomat.pdb

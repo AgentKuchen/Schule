@@ -16,15 +16,18 @@ namespace Bankomat
     {
         List<int> Pin = new List<int>();
         List<int> button = new List<int>();
+        List<string> txtall = new List<string>();
         int wichcard = 0;
         string[] arrtxt;
-       
+        char rechenzeichen;
+        string zeichenkette = "";
+
 
         //erstellt von Leon Raphael Wagner 2AHIT
 
         public Form1()
         {
-
+          
             button.Add(0);
             InitializeComponent();
             bl1.Text = "";
@@ -52,24 +55,30 @@ namespace Bankomat
                 Loadform(button);
                
             }
-            //zieht Geld ab
-            else if (button[0] == 4)
+            else if (button[0] != 0)
             {
-                Loadform(button);
-                Kontostand -= 10;
-            }
-            //fügt Geld hinzu 
-            else if (button[0] == 1)
-            {
-                Kontostand += 10;
-            }
-                
+                //zieht Geld ab
+            if (button[0] == 4)
+                {
+                    Loadform(button);
+                    Kontostand -= 10;
 
-            arrtxt[2] = Kontostand.ToString(); 
-               
+                }
+                //fügt Geld hinzu 
+                else if (button[0] == 1)
+                {
+                    Kontostand += 10;
+                }
+
+                arrtxt[2] = Kontostand.ToString();
+                KontostandSpeichern();
+            }
+            
             
             
         }
+
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -91,35 +100,38 @@ namespace Bankomat
 
 
             arrtxt[2] = Kontostand.ToString();
+            KontostandSpeichern();
 
-            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             int Kontostand = int.Parse(arrtxt[2]);
-            //fügt Geld hinzu 
-            if (button[0] == 1)
-            {
-                Loadform(button);
-                Kontostand += 50;
-
-            }
-            else if(button[0] == 0)
+             if (button[0] == 0)
             {
                 button[0] = 3;
+                Loadform(button);
+            }
+             else if (button[0] != 0){
+                //fügt Geld hinzu 
+                if (button[0] == 1)
+                {
+                    Loadform(button);
+                    Kontostand += 50;
+
+                }
+
+                //zieht Geld ab
+                else if (button[0] == 4)
+                {
+                    Loadform(button);
+                    Kontostand -= 50;
+                }
+
                 arrtxt[2] = Kontostand.ToString();
-                Loadform(button);
+                KontostandSpeichern();
             }
-            //zieht Geld ab
-            else if (button[0] == 4)
-            {
-                Loadform(button);
-                Kontostand -= 50;
-            }
-
-            arrtxt[2] = Kontostand.ToString();
-
+            
 
         }
 
@@ -145,28 +157,35 @@ namespace Bankomat
                 Kontostand -= 100;
 
             arrtxt[2] = Kontostand.ToString();
+            KontostandSpeichern();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            
+
             int Kontostand = int.Parse(arrtxt[2]);
             //fügt Geld hinzu 
             if (button[0] == 1)
             {
+                button[0] = 5;
                 Loadform(button);
+                rechenzeichen = '+';
                 
 
             }
             //zieht Geld ab
             else if (button[0] == 4)
             {
+                button[0] = 5;
                 Loadform(button);
-                
+                rechenzeichen = '-';
             }
 
 
 
             arrtxt[2] = Kontostand.ToString();
+            KontostandSpeichern();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -226,56 +245,114 @@ namespace Bankomat
         //Pin wird eingegeben aka NumPad
         private void button13_Click(object sender, EventArgs e)
         {
+           if(button[0]!=0)
+            {
+                SetCustomMoney(1,rechenzeichen);
+            }
+           else
             PinLong(Pin, 1);
+
         }
+
+        
 
         private void button14_Click(object sender, EventArgs e)
         {
-            PinLong(Pin, 2);
+            if (button[0] != 0)
+            {
+                SetCustomMoney(2, rechenzeichen);
+            }
+            else
+                PinLong(Pin, 2);
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-            PinLong(Pin, 3);
+            if (button[0] != 0)
+            {
+                SetCustomMoney(3, rechenzeichen);
+            }
+            else
+                PinLong(Pin, 3);
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            PinLong(Pin, 4);
+            if (button[0] != 0)
+            {
+                SetCustomMoney(4, rechenzeichen);
+            }
+            else
+                PinLong(Pin, 4);
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            PinLong(Pin, 5);
+            if (button[0] != 0)
+            {
+                SetCustomMoney(5, rechenzeichen);
+            }
+            else
+                PinLong(Pin, 5);
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            PinLong(Pin, 6);
+            if (button[0] != 0)
+            {
+                SetCustomMoney(6, rechenzeichen);
+            }
+            else
+                PinLong(Pin, 6);
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            PinLong(Pin, 7);
+            if (button[0] != 0)
+            {
+                SetCustomMoney(7, rechenzeichen);
+            }
+            else
+                PinLong(Pin, 7);
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            PinLong(Pin, 8);
+            if (button[0] != 0)
+            {
+                SetCustomMoney(8, rechenzeichen);
+            }
+            else
+                PinLong(Pin, 8);
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            PinLong(Pin, 9);
+            if (button[0] != 0)
+            {
+                SetCustomMoney(9, rechenzeichen);
+            }
+            else
+                PinLong(Pin, 9);
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
-            PinLong(Pin, 0);
+            if (button[0] != 0)
+            {
+                SetCustomMoney(0, rechenzeichen);
+            }
+            else
+                PinLong(Pin, 0);
         }
         private void button18_Click(object sender, EventArgs e)
         {
-            PinLong(Pin, 24);
+            if (button[0] != 0)
+            {
+                SetCustomMoney(24, rechenzeichen);
+            }
+            else
+                PinLong(Pin, 24);
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -308,15 +385,18 @@ namespace Bankomat
        
         private void IsPinRight(List<int> pin)
         {
-            
-           
-            string pintxt = arrtxt[1].ToString();
-            bool pinright=true;
-           
-           for(int i = 0; i > pin.Count; i++)
+            string fullPin = "";
+            foreach (int item in pin)
             {
-                if(pin[i]!=pintxt[i])
-                    pinright=false;
+                fullPin += item;
+            }
+            string pintxt = arrtxt[1].ToString();
+            bool pinright=false;
+           
+           for(int i = 0; i < pin.Count; i++)
+            {
+                if(fullPin.Trim() == pintxt.Trim())
+                    pinright=true;
             }
             if (pinright)
             {
@@ -324,7 +404,13 @@ namespace Bankomat
                 label2.Text = "";
                 InputNumpad.Text = "";
             }
-            
+            else if(pinright==false)
+            {
+                Pin.Clear();
+                InputNumpad.Text = "";
+            }
+
+
         }
 
         /// <summary>
@@ -347,7 +433,8 @@ namespace Bankomat
             bool stringfound=false;
             bool end=false;
             wichcard = 0;
-            StreamReader sr = new StreamReader(@"E:\Programieren\github neu\Schule\Schule\Bankomat\Kartendaten.txt");
+            StreamReader sr = new StreamReader(@"F:\Bankomat\Kartendaten.txt");
+            
             while (stringfound == false&&end==false)
             {
                 wichcard++;
@@ -357,7 +444,7 @@ namespace Bankomat
                     stringfound = true;
                 else if(arrtxt[0]=="end")
                     end = true;
-
+                
                
             }
             
@@ -369,6 +456,78 @@ namespace Bankomat
            
                 
 
+        }
+        /// <summary>
+        /// Kontostand wird hier ins file abgespeichert
+        /// </summary>
+        private void KontostandSpeichern()
+        {
+            // file wird in liste gespeichert
+            StreamReader sr = new StreamReader(@"F:\Bankomat\Kartendaten.txt");
+            while (sr.EndOfStream==false)
+                txtall.Add(sr.ReadLine());
+            sr.Close();
+            string[] splittext = txtall[wichcard-1].Split(';');
+            string output = "";
+            for (int i = 0; i < txtall.Count(); i++)
+            {
+                //wenn true wird Kontostand geupdatet
+                if (wichcard-1 == i)
+                {
+                    splittext[2] = arrtxt[2];
+                   
+                  
+                     output = splittext[0]+";"+ splittext[1] + ";"+ splittext[2];
+
+                    txtall[i] = output;
+
+                }
+            }
+            
+            StreamWriter sw = new StreamWriter(@"F:\Bankomat\Kartendaten.txt");
+            for(int i=0;i<txtall.Count;i++)
+                sw.WriteLine(txtall[i]);
+            sw.Close();
+            
+            txtall.Clear();
+        }
+        /// <summary>
+        /// Unterprogramm zum Festlegen vom Custom money
+        /// </summary>
+        /// <param name="v"></param>
+        private void SetCustomMoney(int v, char rechenzeichen)
+        {
+           
+            if (v < 10)
+            {
+                InputNumpad.Text += v.ToString();
+                zeichenkette += v.ToString();
+            }
+            else
+            {
+                int Kontostand = int.Parse(arrtxt[2]);
+                //Geht ins Hinzufüg Menü rein
+                
+               
+                    //zieht Geld ab
+                    if (rechenzeichen == '-')
+                    {
+                       
+                    Kontostand -= int.Parse(zeichenkette);
+
+                    }
+                    //fügt Geld hinzu 
+                    else if (rechenzeichen=='+')
+                    {
+                        Kontostand += int.Parse(zeichenkette);
+                    }
+
+                    arrtxt[2] = Kontostand.ToString();
+                    KontostandSpeichern();
+
+                Loadform(button);
+                zeichenkette = "";
+            }
         }
         /// <summary>
         /// die form wird hier geladen
@@ -410,6 +569,18 @@ namespace Bankomat
                 error_Katnum.Text = "";
                 InputNumpad.Text = arrtxt[2].ToString();
                 label2.Text = "Ihr Kontostand beträgt:";
+            }
+            else if (l == 5)
+            {
+                bl1.Text = "";
+                bl2.Text = "";
+                bl3.Text = "";
+                bl4.Text = "";
+                bl5.Text = "";
+                bl6.Text = "Abbrechen";
+                error_Katnum.Text = "";
+                InputNumpad.Text = "";
+                label2.Text = "Geben sie den Geldbetrag an:";
             }
             else if (l == 6)
             {

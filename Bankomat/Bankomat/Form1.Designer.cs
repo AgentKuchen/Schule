@@ -188,7 +188,7 @@
             this.bl5.AutoSize = true;
             this.bl5.Location = new System.Drawing.Point(612, 103);
             this.bl5.Name = "bl5";
-            this.bl5.Size = new System.Drawing.Size(44, 16);
+            this.bl5.Size = new System.Drawing.Size(46, 17);
             this.bl5.TabIndex = 47;
             this.bl5.Text = "label2";
             this.bl5.Click += new System.EventHandler(this.bl5_Click);
@@ -198,7 +198,7 @@
             this.bl2.AutoSize = true;
             this.bl2.Location = new System.Drawing.Point(176, 103);
             this.bl2.Name = "bl2";
-            this.bl2.Size = new System.Drawing.Size(44, 16);
+            this.bl2.Size = new System.Drawing.Size(46, 17);
             this.bl2.TabIndex = 46;
             this.bl2.Text = "label2";
             this.bl2.Click += new System.EventHandler(this.bl2_Click);
@@ -208,7 +208,7 @@
             this.bl4.AutoSize = true;
             this.bl4.Location = new System.Drawing.Point(612, 35);
             this.bl4.Name = "bl4";
-            this.bl4.Size = new System.Drawing.Size(44, 16);
+            this.bl4.Size = new System.Drawing.Size(46, 17);
             this.bl4.TabIndex = 45;
             this.bl4.Text = "label2";
             this.bl4.Click += new System.EventHandler(this.bl4_Click);
@@ -218,7 +218,7 @@
             this.bl6.AutoSize = true;
             this.bl6.Location = new System.Drawing.Point(612, 171);
             this.bl6.Name = "bl6";
-            this.bl6.Size = new System.Drawing.Size(44, 16);
+            this.bl6.Size = new System.Drawing.Size(46, 17);
             this.bl6.TabIndex = 44;
             this.bl6.Text = "label2";
             this.bl6.Click += new System.EventHandler(this.bl6_Click);
@@ -228,7 +228,7 @@
             this.bl3.AutoSize = true;
             this.bl3.Location = new System.Drawing.Point(176, 171);
             this.bl3.Name = "bl3";
-            this.bl3.Size = new System.Drawing.Size(44, 16);
+            this.bl3.Size = new System.Drawing.Size(46, 17);
             this.bl3.TabIndex = 43;
             this.bl3.Text = "label2";
             this.bl3.Click += new System.EventHandler(this.bl3_Click);
@@ -238,7 +238,7 @@
             this.bl1.AutoSize = true;
             this.bl1.Location = new System.Drawing.Point(176, 35);
             this.bl1.Name = "bl1";
-            this.bl1.Size = new System.Drawing.Size(44, 16);
+            this.bl1.Size = new System.Drawing.Size(46, 17);
             this.bl1.TabIndex = 42;
             this.bl1.Text = "label2";
             this.bl1.Click += new System.EventHandler(this.bl1_Click);
@@ -327,9 +327,9 @@
             this.error_Katnum.AutoSize = true;
             this.error_Katnum.Location = new System.Drawing.Point(44, 343);
             this.error_Katnum.Name = "error_Katnum";
-            this.error_Katnum.Size = new System.Drawing.Size(44, 16);
+            this.error_Katnum.Size = new System.Drawing.Size(94, 17);
             this.error_Katnum.TabIndex = 50;
-            this.error_Katnum.Text = "label2";
+            this.error_Katnum.Text = "Error_katnum";
             // 
             // InputNumpad
             // 
@@ -337,7 +337,7 @@
             this.InputNumpad.BackColor = System.Drawing.SystemColors.Window;
             this.InputNumpad.Location = new System.Drawing.Point(372, 103);
             this.InputNumpad.Name = "InputNumpad";
-            this.InputNumpad.Size = new System.Drawing.Size(87, 16);
+            this.InputNumpad.Size = new System.Drawing.Size(92, 17);
             this.InputNumpad.TabIndex = 51;
             this.InputNumpad.Text = "InputNumpad";
             this.InputNumpad.Click += new System.EventHandler(this.InputNumpad_Click);
@@ -347,7 +347,7 @@
             this.label2.BackColor = System.Drawing.SystemColors.Window;
             this.label2.Location = new System.Drawing.Point(322, 51);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(183, 23);
+            this.label2.Size = new System.Drawing.Size(248, 23);
             this.label2.TabIndex = 52;
             this.label2.Text = "Geben sie ihren Pin an:";
             // 
@@ -356,7 +356,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(683, 416);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 16);
+            this.label3.Size = new System.Drawing.Size(151, 17);
             this.label3.TabIndex = 53;
             this.label3.Text = "Leon Raphael Wagner";
             // 
