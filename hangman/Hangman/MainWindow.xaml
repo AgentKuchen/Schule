@@ -1,0 +1,45 @@
+﻿<Window x:Class="Hangman.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hangman"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas>
+        <TextBox BorderThickness="0" x:Name="text" FontSize="30" Width="500" Canvas.Left="70" Canvas.Top="200" TextAlignment="Center" IsReadOnly="True"></TextBox>
+        <TextBox BorderThickness="0" x:Name="livestxt" FontSize="30" Width="50" HorizontalAlignment="Left" Canvas.Top="10" VerticalAlignment="Center" Canvas.Left="10"></TextBox>
+        <Image x:Name="image" Height="300" Width="240" Source="/pixil-frame-6.png" HorizontalAlignment="Left" Canvas.Left="540" VerticalAlignment="Top" Canvas.Top="10">
+        </Image>
+        <!--#region NewRegion -->
+        <Button x:Name="letter" Width="20" Height="20" Canvas.Left="10" Canvas.Top="360" Click="a_Click">A</Button>
+        <Button x:Name="b" Width="20" Height="20" Canvas.Left="40" Canvas.Top="360" Click="b_Click">B</Button>
+        <Button x:Name="c" Width="20" Height="20" Canvas.Left="70" Canvas.Top="360" Click="c_Click">C</Button>
+        <Button x:Name="d" Width="20" Height="20" Canvas.Left="100" Canvas.Top="360" Click="d_Click">D</Button>
+        <Button x:Name="e" Width="20" Height="20" Canvas.Left="130" Canvas.Top="360" Click="e_Click">E</Button>
+        <Button x:Name="f" Width="20" Height="20" Canvas.Left="160" Canvas.Top="360" Click="f_Click">F</Button>
+        <Button x:Name="g" Width="20" Height="20" Canvas.Left="190" Canvas.Top="360" Click="g_Click">G</Button>
+        <Button x:Name="h" Width="20" Height="20" Canvas.Left="220" Canvas.Top="360" Click="h_Click">H</Button>
+        <Button x:Name="i" Width="20" Height="20" Canvas.Left="250" Canvas.Top="360" Click="i_Click">I</Button>
+        <Button x:Name="j" Width="20" Height="20" Canvas.Left="280" Canvas.Top="360" Click="j_Click">J</Button>
+        <Button x:Name="k" Width="20" Height="20" Canvas.Left="310" Canvas.Top="360" Click="k_Click">K</Button>
+        <Button x:Name="l" Width="20" Height="20" Canvas.Left="340" Canvas.Top="360" Click="l_Click">L</Button>
+        <Button x:Name="m" Width="20" Height="20" Canvas.Left="370" Canvas.Top="360" Click="m_Click">M</Button>
+        <Button x:Name="n" Width="20" Height="20" Canvas.Left="400" Canvas.Top="360" Click="n_Click">N</Button>
+        <Button x:Name="o" Width="20" Height="20" Canvas.Left="430" Canvas.Top="360" Click="o_Click">O</Button>
+        <Button x:Name="p" Width="20" Height="20" Canvas.Left="460" Canvas.Top="360" Click="p_Click">P</Button>
+        <Button x:Name="q" Width="20" Height="20" Canvas.Left="490" Canvas.Top="360" Click="q_Click">Q</Button>
+        <Button x:Name="r" Width="20" Height="20" Canvas.Left="520" Canvas.Top="360" Click="r_Click">R</Button>
+        <Button x:Name="s" Width="20" Height="20" Canvas.Left="550" Canvas.Top="360" Click="s_Click">S</Button>
+        <Button x:Name="t" Width="20" Height="20" Canvas.Left="580" Canvas.Top="360" Click="t_Click">T</Button>
+        <Button x:Name="u" Width="20" Height="20" Canvas.Left="610" Canvas.Top="360" Click="u_Click">U</Button>
+        <Button x:Name="v" Width="20" Height="20" Canvas.Left="640" Canvas.Top="360" Click="v_Click">V</Button>
+        <Button x:Name="w" Width="20" Height="20" Canvas.Left="670" Canvas.Top="360" Click="w_Click">W</Button>
+        <Button x:Name="x" Width="20" Height="20" Canvas.Left="700" Canvas.Top="360" Click="x_Click">X</Button>
+        <Button x:Name="y" Width="20" Height="20" Canvas.Left="730" Canvas.Top="360" Click="y_Click">Y</Button>
+        <Button x:Name="z" Width="20" Height="20" Canvas.Left="760" Canvas.Top="360" Click="z_Click">Z</Button>
+        <!--#endregion-->
+
+        
+    </Canvas>
+</Window>

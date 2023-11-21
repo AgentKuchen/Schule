@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="pixil-frame-0.png" />
+    <None Remove="pixil-frame-6.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="pixil-frame-6.png" />
+  </ItemGroup>
+
+</Project>

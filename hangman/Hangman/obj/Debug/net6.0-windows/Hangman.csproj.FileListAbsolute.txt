@@ -1,0 +1,84 @@
+E:\Programieren\C#\Hangman\Hangman\bin\Debug\net6.0-windows\Hangman.exe
+E:\Programieren\C#\Hangman\Hangman\bin\Debug\net6.0-windows\Hangman.deps.json
+E:\Programieren\C#\Hangman\Hangman\bin\Debug\net6.0-windows\Hangman.runtimeconfig.json
+E:\Programieren\C#\Hangman\Hangman\bin\Debug\net6.0-windows\Hangman.dll
+E:\Programieren\C#\Hangman\Hangman\bin\Debug\net6.0-windows\Hangman.pdb
+E:\Programieren\C#\Hangman\Hangman\obj\Debug\net6.0-windows\Hangman.csproj.AssemblyReference.cache
+E:\Programieren\C#\Hangman\Hangman\obj\Debug\net6.0-windows\MainWindow.g.cs
+E:\Programieren\C#\Hangman\Hangman\obj\Debug\net6.0-windows\App.g.cs
+E:\Programieren\C#\Hangman\Hangman\obj\Debug\net6.0-windows\Hangman_MarkupCompile.cache
+E:\Programieren\C#\Hangman\Hangman\obj\Debug\net6.0-windows\Hangman_MarkupCompile.lref
+E:\Programieren\C#\Hangman\Hangman\obj\Debug\net6.0-windows\MainWindow.baml
+E:\Programieren\C#\Hangman\Hangman\obj\Debug\net6.0-windows\Hangman.g.resources
+E:\Programieren\C#\Hangman\Hangman\obj\Debug\net6.0-windows\Hangman.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programieren\C#\Hangman\Hangman\obj\Debug\net6.0-windows\Hangman.AssemblyInfoInputs.cache
+E:\Programieren\C#\Hangman\Hangman\obj\Debug\net6.0-windows\Hangman.AssemblyInfo.cs
+E:\Programieren\C#\Hangman\Hangman\obj\Debug\net6.0-windows\Hangman.csproj.CoreCompileInputs.cache
+E:\Programieren\C#\Hangman\Hangman\obj\Debug\net6.0-windows\Hangman.dll
+E:\Programieren\C#\Hangman\Hangman\obj\Debug\net6.0-windows\refint\Hangman.dll
+E:\Programieren\C#\Hangman\Hangman\obj\Debug\net6.0-windows\Hangman.pdb
+E:\Programieren\C#\Hangman\Hangman\obj\Debug\net6.0-windows\Hangman.genruntimeconfig.cache
+E:\Programieren\C#\Hangman\Hangman\obj\Debug\net6.0-windows\ref\Hangman.dll
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\bin\Debug\net6.0-windows\Hangman.exe
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\bin\Debug\net6.0-windows\Hangman.deps.json
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\bin\Debug\net6.0-windows\Hangman.runtimeconfig.json
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\bin\Debug\net6.0-windows\Hangman.dll
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\bin\Debug\net6.0-windows\Hangman.pdb
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\obj\Debug\net6.0-windows\Hangman.csproj.AssemblyReference.cache
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\obj\Debug\net6.0-windows\MainWindow.g.cs
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\obj\Debug\net6.0-windows\App.g.cs
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\obj\Debug\net6.0-windows\Hangman_MarkupCompile.cache
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\obj\Debug\net6.0-windows\Hangman_MarkupCompile.lref
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\obj\Debug\net6.0-windows\MainWindow.baml
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\obj\Debug\net6.0-windows\Hangman.g.resources
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\obj\Debug\net6.0-windows\Hangman.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\obj\Debug\net6.0-windows\Hangman.AssemblyInfoInputs.cache
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\obj\Debug\net6.0-windows\Hangman.AssemblyInfo.cs
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\obj\Debug\net6.0-windows\Hangman.csproj.CoreCompileInputs.cache
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\obj\Debug\net6.0-windows\Hangman.dll
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\obj\Debug\net6.0-windows\refint\Hangman.dll
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\obj\Debug\net6.0-windows\Hangman.pdb
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\obj\Debug\net6.0-windows\Hangman.genruntimeconfig.cache
+E:\Programieren\github neu\Hangman\Hangman\TOT_Hangman\Hangman\obj\Debug\net6.0-windows\ref\Hangman.dll
+F:\Hangman\bin\Debug\net6.0-windows\Hangman.exe
+F:\Hangman\bin\Debug\net6.0-windows\Hangman.deps.json
+F:\Hangman\bin\Debug\net6.0-windows\Hangman.runtimeconfig.json
+F:\Hangman\bin\Debug\net6.0-windows\Hangman.dll
+F:\Hangman\bin\Debug\net6.0-windows\Hangman.pdb
+F:\Hangman\obj\Debug\net6.0-windows\Hangman.csproj.AssemblyReference.cache
+F:\Hangman\obj\Debug\net6.0-windows\MainWindow.g.cs
+F:\Hangman\obj\Debug\net6.0-windows\App.g.cs
+F:\Hangman\obj\Debug\net6.0-windows\Hangman_MarkupCompile.cache
+F:\Hangman\obj\Debug\net6.0-windows\Hangman_MarkupCompile.lref
+F:\Hangman\obj\Debug\net6.0-windows\MainWindow.baml
+F:\Hangman\obj\Debug\net6.0-windows\Hangman.g.resources
+F:\Hangman\obj\Debug\net6.0-windows\Hangman.GeneratedMSBuildEditorConfig.editorconfig
+F:\Hangman\obj\Debug\net6.0-windows\Hangman.AssemblyInfoInputs.cache
+F:\Hangman\obj\Debug\net6.0-windows\Hangman.AssemblyInfo.cs
+F:\Hangman\obj\Debug\net6.0-windows\Hangman.csproj.CoreCompileInputs.cache
+F:\Hangman\obj\Debug\net6.0-windows\Hangman.dll
+F:\Hangman\obj\Debug\net6.0-windows\refint\Hangman.dll
+F:\Hangman\obj\Debug\net6.0-windows\Hangman.pdb
+F:\Hangman\obj\Debug\net6.0-windows\Hangman.genruntimeconfig.cache
+F:\Hangman\obj\Debug\net6.0-windows\ref\Hangman.dll
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\bin\Debug\net6.0-windows\Hangman.exe
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\bin\Debug\net6.0-windows\Hangman.deps.json
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\bin\Debug\net6.0-windows\Hangman.runtimeconfig.json
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\bin\Debug\net6.0-windows\Hangman.dll
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\bin\Debug\net6.0-windows\Hangman.pdb
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\obj\Debug\net6.0-windows\Hangman.csproj.AssemblyReference.cache
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\obj\Debug\net6.0-windows\Hangman_MarkupCompile.cache
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\obj\Debug\net6.0-windows\Hangman_MarkupCompile.lref
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\obj\Debug\net6.0-windows\Hangman.g.resources
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\obj\Debug\net6.0-windows\Hangman.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\obj\Debug\net6.0-windows\Hangman.AssemblyInfoInputs.cache
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\obj\Debug\net6.0-windows\Hangman.AssemblyInfo.cs
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\obj\Debug\net6.0-windows\Hangman.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\obj\Debug\net6.0-windows\Hangman.dll
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\obj\Debug\net6.0-windows\refint\Hangman.dll
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\obj\Debug\net6.0-windows\Hangman.pdb
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\obj\Debug\net6.0-windows\Hangman.genruntimeconfig.cache
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\Hangman\obj\Debug\net6.0-windows\ref\Hangman.dll
