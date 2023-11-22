@@ -23,9 +23,9 @@ namespace Hangman
     public partial class MainWindow : Window
     {
         public string word = "";
-        string hiddenword = "";
-        int mistakes = 1;
-        int score = 0;
+        public string hiddenword = "";
+        public int mistakes = 1;
+        public int score = 0;
 
         public MainWindow()
         {
@@ -50,7 +50,7 @@ namespace Hangman
         {
             text.Text = "";
             for(int i = 0; i < hiddenword.Length; i++)
-            text.Text += hiddenword[i]+" ";
+                text.Text += hiddenword[i]+" ";
 
             scoretxt.Text=score.ToString();
         }
@@ -82,18 +82,34 @@ namespace Hangman
         //funkt nicht
         private void ChangePicture(int mistakes)
         {
-            image.Source = new BitmapImage(new Uri(@"/frames/pixil-frame-2.png"));
+            /*
+            string filename = $"../../../frames/1.png";
+            
+            Uri uri = new Uri(filename);
+            BitmapImage bitmap = new BitmapImage(uri);
+            image.Source = bitmap;
+            */
+            //   image.Source = new BitmapImage(new Uri($@"/frames/pixil-frame-{mistakes}.png"));
         }
 
         // funktioniert nicht
         //Buchstabe erstetzen 
         private void Replaceletter(string letter)
         {
+            string newHiddenword = "";
             for (int i = 0; i < hiddenword.Length; i++)
             {
+                
                 if (letter == word[i].ToString())
-                    hiddenword[i].ToString().Replace("_", letter);
+                    newHiddenword+=(char.Parse(letter));
+                else if(hiddenword[i]=='_')
+                    newHiddenword+=('_');
+                else
+                    newHiddenword += hiddenword[i];
+
+               
             }
+            hiddenword = newHiddenword;
             //erkennen ob spiel gewonnen ist
             if (!hiddenword.Contains("_"))
             {

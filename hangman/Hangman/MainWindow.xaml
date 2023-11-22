@@ -10,7 +10,7 @@
         <Canvas x:Name="alllements">
         <TextBox BorderThickness="0" x:Name="text" FontSize="30" Width="500" Canvas.Left="70" Canvas.Top="200" TextAlignment="Center" IsReadOnly="True"></TextBox>
         <TextBox BorderThickness="0" x:Name="scoretxt" FontSize="30" Width="50" HorizontalAlignment="Left" Canvas.Top="10" VerticalAlignment="Center" Canvas.Left="10"></TextBox>
-        <Image x:Name="image" Height="300" Width="240" Source="/frames/pixil-frame-1.png" HorizontalAlignment="Left" Canvas.Left="540" VerticalAlignment="Top" Canvas.Top="10">
+        <Image x:Name="image" Height="300" Width="240"  HorizontalAlignment="Left" Canvas.Left="540" VerticalAlignment="Top" Canvas.Top="10">
         </Image>
         <!--#region NewRegion -->
         <Button x:Name="letter" Width="20" Height="20" Canvas.Left="10" Canvas.Top="360" Click="a_Click">A</Button>

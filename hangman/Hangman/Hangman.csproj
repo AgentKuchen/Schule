@@ -8,7 +8,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="frames\1.png" />
+    <None Remove="frames\pixil-frame-2.png" />
+    <None Remove="frames\pixil-frame-3.png" />
+    <None Remove="frames\pixil-frame-4.png" />
+    <None Remove="frames\pixil-frame-5.png" />
+    <None Remove="frames\pixil-frame-6.png" />
     <None Remove="pixil-frame-0.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="frames\1.png" />
+    <Resource Include="frames\pixil-frame-2.png" />
+    <Resource Include="frames\pixil-frame-3.png" />
+    <Resource Include="frames\pixil-frame-4.png" />
+    <Resource Include="frames\pixil-frame-5.png" />
+    <Resource Include="frames\pixil-frame-6.png" />
   </ItemGroup>
 
 </Project>
