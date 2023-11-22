@@ -24,13 +24,14 @@ namespace Hangman
     {
         public string word = "";
         string hiddenword = "";
-        int mistakes = 0;
+        int mistakes = 1;
         int score = 0;
 
         public MainWindow()
         {
             InitializeComponent();
             InitializeWord();
+            ChangePicture(mistakes);
         }
 
 
@@ -73,8 +74,11 @@ namespace Hangman
             }
 
             UpdateText();
-
+            if (mistakes == 6)
+                Gameover();
         }
+
+
         //funkt nicht
         private void ChangePicture(int mistakes)
         {
@@ -82,6 +86,7 @@ namespace Hangman
         }
 
         // funktioniert nicht
+        //Buchstabe erstetzen 
         private void Replaceletter(string letter)
         {
             for (int i = 0; i < hiddenword.Length; i++)
@@ -89,7 +94,24 @@ namespace Hangman
                 if (letter == word[i].ToString())
                     hiddenword[i].ToString().Replace("_", letter);
             }
+            //erkennen ob spiel gewonnen ist
+            if (!hiddenword.Contains("_"))
+            {
+                score++;
+                mistakes = 1;
+                word = "";
+                hiddenword = "";
+                InitializeWord();
+                ChangePicture(mistakes);
+            }
                 
+                
+        }
+
+        private void Gameover()
+        {
+            alllements.Visibility = Visibility.Collapsed;
+            allgameover.Visibility = Visibility.Visible;
         }
         #region Buchstaben buttons
 

@@ -30,7 +30,6 @@ namespace Hangman.Klassen
             }
                    
             sr.Close();
-            MessageBox.Show(word);
             return word.ToLower();
         }
            

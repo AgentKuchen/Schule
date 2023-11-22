@@ -12,10 +12,10 @@ namespace Hangman.Klassen
 
         public static void Write(string name, int score)
         {
-            string filename = @"";
+            string filename = @"../../../textfiles/Scores.txt";
             using (StreamWriter sw = new StreamWriter(filename, true))
             {
-                sw.WriteLine($"{name},{score}");
+                sw.WriteLine($"{name},{score}");    
                 
             }
             
