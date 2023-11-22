@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iat8PWaSJkWzGSz/tmQpg5oEnRp9EFqCCrotju4S6C8imQAkZj9aBRqYkwySOemmAa+rdC4rHLsN+qd4MKBxzA==",
+  "dgSpecHash": "Eu640FK5UIb2rGMPoi+EwGnltZ9gEWxLgnmxc+tP+mAay7cCUDLz6qSmFG7DziWDE/KzazXAWzNxdRnOZThFww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Acer\\Desktop\\Programmieren\\C#\\Schule\\Hangman\\Hangman.csproj",
+  "projectFilePath": "C:\\Users\\Acer\\Desktop\\Programmieren\\C#\\Schule\\hangman\\Hangman\\Hangman.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

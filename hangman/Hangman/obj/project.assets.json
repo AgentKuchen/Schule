@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Acer\\Desktop\\Programmieren\\C#\\Schule\\Hangman\\Hangman.csproj",
+      "projectUniqueName": "C:\\Users\\Acer\\Desktop\\Programmieren\\C#\\Schule\\hangman\\Hangman\\Hangman.csproj",
       "projectName": "Hangman",
-      "projectPath": "C:\\Users\\Acer\\Desktop\\Programmieren\\C#\\Schule\\Hangman\\Hangman.csproj",
+      "projectPath": "C:\\Users\\Acer\\Desktop\\Programmieren\\C#\\Schule\\hangman\\Hangman\\Hangman.csproj",
       "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Acer\\Desktop\\Programmieren\\C#\\Schule\\Hangman\\obj\\",
+      "outputPath": "C:\\Users\\Acer\\Desktop\\Programmieren\\C#\\Schule\\hangman\\Hangman\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",

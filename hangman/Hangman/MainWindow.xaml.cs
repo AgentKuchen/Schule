@@ -22,8 +22,9 @@ namespace Hangman
     {
         string word = "";
         string hiddenword = "";
-        int lives = 6;
-        int points = 0;
+        int mistakes = 0;
+        
+        int score = 0;
 
         public MainWindow()
         {
@@ -49,7 +50,7 @@ namespace Hangman
             for(int i = 0; i < hiddenword.Length; i++)
             text.Text += hiddenword[i]+" ";
 
-            livestxt.Text = lives.ToString();
+            scoretxt.Text=score.ToString();
         }
 
 
@@ -58,7 +59,11 @@ namespace Hangman
             if (word.Contains(letter))
                 Replaceletter(letter);
             else
-                lives--;
+            {
+                mistakes++;
+                ChangePicture(mistakes);
+            }
+               
 
             if (sender is Button clickedButton)
             {
@@ -69,6 +74,12 @@ namespace Hangman
             UpdateText();
 
         }
+
+        private void ChangePicture(int mistakes)
+        {
+            throw new NotImplementedException();
+        }
+
         // funktioniert nicht
         private void Replaceletter(string letter)
         {
@@ -79,6 +90,7 @@ namespace Hangman
             }
                 
         }
+        #region Buchstaben buttons
 
         private void a_Click(object sender, RoutedEventArgs e)
         {
@@ -211,5 +223,7 @@ namespace Hangman
             ChooseLetter(sender, "z");
         }
         
+
+        #endregion
     }
 }
