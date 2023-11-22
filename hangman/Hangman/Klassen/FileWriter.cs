@@ -16,8 +16,9 @@ namespace Hangman.Klassen
             using (StreamWriter sw = new StreamWriter(filename, true))
             {
                 sw.WriteLine($"{name},{score}");
+                
             }
-
+            
         }
     }
 }

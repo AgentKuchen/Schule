@@ -12,15 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Hangman.Klassen;
 
 namespace Hangman
 {
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        string word = "";
+        public string word = "";
         string hiddenword = "";
         int mistakes = 0;
         int score = 0;
@@ -34,7 +36,7 @@ namespace Hangman
 
         private void InitializeWord()
         {
-            word = "kuchen";
+            word = FileReader.Read();
            
             for (int i = 0; i < word.Length; i++)
                 hiddenword += "_";
