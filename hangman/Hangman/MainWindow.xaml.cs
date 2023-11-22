@@ -23,7 +23,6 @@ namespace Hangman
         string word = "";
         string hiddenword = "";
         int mistakes = 0;
-        
         int score = 0;
 
         public MainWindow()
@@ -74,10 +73,10 @@ namespace Hangman
             UpdateText();
 
         }
-
+        //funkt nicht
         private void ChangePicture(int mistakes)
         {
-            throw new NotImplementedException();
+            image.Source = new BitmapImage(new Uri(@"/frames/pixil-frame-2.png"));
         }
 
         // funktioniert nicht
