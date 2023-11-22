@@ -82,17 +82,13 @@ namespace Hangman
         //funkt nicht
         private void ChangePicture(int mistakes)
         {
-            /*
-            string filename = $"../../../frames/1.png";
             
-            Uri uri = new Uri(filename);
-            BitmapImage bitmap = new BitmapImage(uri);
-            image.Source = bitmap;
-            */
-            //   image.Source = new BitmapImage(new Uri($@"/frames/pixil-frame-{mistakes}.png"));
+           
+            
+            image.Source = new BitmapImage(new Uri($"frames/pixil-frame-{mistakes}.png"));
         }
 
-        // funktioniert nicht
+       
         //Buchstabe erstetzen 
         private void Replaceletter(string letter)
         {
@@ -117,11 +113,42 @@ namespace Hangman
                 mistakes = 1;
                 word = "";
                 hiddenword = "";
+                allbvisible();
                 InitializeWord();
                 ChangePicture(mistakes);
             }
                 
                 
+        }
+
+        private void allbvisible()
+        {
+            a.Visibility = Visibility.Visible;
+            b.Visibility = Visibility.Visible;
+            c.Visibility = Visibility.Visible;
+            d.Visibility = Visibility.Visible;
+            e.Visibility = Visibility.Visible;
+            f.Visibility = Visibility.Visible;
+            g.Visibility = Visibility.Visible;
+            h.Visibility = Visibility.Visible;
+            i.Visibility = Visibility.Visible;
+            j.Visibility = Visibility.Visible;
+            k.Visibility = Visibility.Visible;
+            l.Visibility = Visibility.Visible;
+            m.Visibility = Visibility.Visible;
+            n.Visibility = Visibility.Visible;
+            o.Visibility = Visibility.Visible;
+            p.Visibility = Visibility.Visible;
+            q.Visibility = Visibility.Visible;
+            r.Visibility = Visibility.Visible;
+            s.Visibility = Visibility.Visible;
+            t.Visibility = Visibility.Visible;
+            u.Visibility = Visibility.Visible;
+            v.Visibility = Visibility.Visible;
+            w.Visibility = Visibility.Visible;
+            x.Visibility = Visibility.Visible;
+            y.Visibility = Visibility.Visible;
+            z.Visibility = Visibility.Visible;
         }
 
         private void Gameover()

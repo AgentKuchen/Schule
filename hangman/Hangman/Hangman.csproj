@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="frames\1.png" />
+    <None Remove="frames\pixil-frame-1.png" />
     <None Remove="frames\pixil-frame-2.png" />
     <None Remove="frames\pixil-frame-3.png" />
     <None Remove="frames\pixil-frame-4.png" />
@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="frames\1.png" />
+    <Resource Include="frames\pixil-frame-1.png" />
     <Resource Include="frames\pixil-frame-2.png" />
     <Resource Include="frames\pixil-frame-3.png" />
     <Resource Include="frames\pixil-frame-4.png" />

@@ -12,8 +12,9 @@
         <TextBox BorderThickness="0" x:Name="scoretxt" FontSize="30" Width="50" HorizontalAlignment="Left" Canvas.Top="10" VerticalAlignment="Center" Canvas.Left="10"></TextBox>
         <Image x:Name="image" Height="300" Width="240"  HorizontalAlignment="Left" Canvas.Left="540" VerticalAlignment="Top" Canvas.Top="10">
         </Image>
-        <!--#region NewRegion -->
-        <Button x:Name="letter" Width="20" Height="20" Canvas.Left="10" Canvas.Top="360" Click="a_Click">A</Button>
+        <!--#region Buchstaben buttons -->
+           
+        <Button x:Name="a" Width="20" Height="20" Canvas.Left="10" Canvas.Top="360" Click="a_Click">A</Button>
         <Button x:Name="b" Width="20" Height="20" Canvas.Left="40" Canvas.Top="360" Click="b_Click">B</Button>
         <Button x:Name="c" Width="20" Height="20" Canvas.Left="70" Canvas.Top="360" Click="c_Click">C</Button>
         <Button x:Name="d" Width="20" Height="20" Canvas.Left="100" Canvas.Top="360" Click="d_Click">D</Button>
@@ -39,6 +40,7 @@
         <Button x:Name="x" Width="20" Height="20" Canvas.Left="700" Canvas.Top="360" Click="x_Click">X</Button>
         <Button x:Name="y" Width="20" Height="20" Canvas.Left="730" Canvas.Top="360" Click="y_Click">Y</Button>
         <Button x:Name="z" Width="20" Height="20" Canvas.Left="760" Canvas.Top="360" Click="z_Click">Z</Button>
+           
         <!--#endregion-->
         </Canvas>
         <Canvas x:Name="allgameover" Visibility="Collapsed">
