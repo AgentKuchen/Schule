@@ -147,13 +147,15 @@ namespace Hangman
         }
         private void Restart()
         {
-            score++;
+            score=0;
             mistakes = 1;
             word = "";
             hiddenword = "";
             InitializeWord();
             ChangePicture(mistakes);
             allbvisible();
+            alllements.Visibility = Visibility.Visible;
+            allgameover.Visibility = Visibility.Collapsed;
         }
         #region Buchstaben buttons
 
@@ -298,7 +300,8 @@ namespace Hangman
 
         private void save_Click(object sender, RoutedEventArgs e)
         {
-
+            string strgname = name.Text;
+            FileWriter.Write(strgname,score);
         }
     }
 }

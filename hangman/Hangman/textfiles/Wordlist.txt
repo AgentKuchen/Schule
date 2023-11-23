@@ -8,7 +8,7 @@ Garten
 Haus
 Insel
 Jacke
-König
+Koenig
 Lampe
 Maus
 Nase
@@ -87,7 +87,7 @@ Foto
 Gitarre
 Hotel
 Kaktus
-Löwe
+Loewe
 Nase
 Pizza
 Quelle
