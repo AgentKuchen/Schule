@@ -53,6 +53,7 @@ namespace Hangman
                 text.Text += hiddenword[i]+" ";
 
             scoretxt.Text=score.ToString();
+            
         }
 
 
@@ -65,17 +66,15 @@ namespace Hangman
                 mistakes++;
                 ChangePicture(mistakes);
             }
-               
-
-            if (sender is Button clickedButton)
-            {
-               
-                clickedButton.Visibility = Visibility.Collapsed;
-            }
 
             UpdateText();
-            if (mistakes == 6)
+            if (mistakes == 7)
                 Gameover();
+            else if (sender is Button clickedButton)
+            {
+
+                clickedButton.Visibility = Visibility.Collapsed;
+            }
         }
 
 
@@ -108,11 +107,56 @@ namespace Hangman
             hiddenword = newHiddenword;
             //erkennen ob spiel gewonnen ist
             if (!hiddenword.Contains("_"))
+            {
+                int scorehelp = score+1;
                 Restart();
+                allbvisible();
+                score += scorehelp;
+            }
+               
                 
                 
         }
 
+        
+
+        private void Gameover()
+        {
+            alllements.Visibility = Visibility.Collapsed;
+            allgameover.Visibility = Visibility.Visible;
+            score = 0;
+            for (int i = 0; i < word.Length; i++)
+                solution.Text += word[i] + " ";
+            
+        }
+        private void Restart()
+        {
+            mistakes = 0;
+            word = "";
+            hiddenword = "";
+            solution.Text = "";
+            InitializeWord();
+            ChangePicture(mistakes);
+            alllements.Visibility = Visibility.Visible;
+            allgameover.Visibility = Visibility.Collapsed;
+            
+        }
+       
+
+        private void restart_Click(object sender, RoutedEventArgs e)
+        {
+            Restart();
+            allbvisible();
+        }
+
+        private void save_Click(object sender, RoutedEventArgs e)
+        {
+            string strgname = name.Text;
+            FileWriter.Write(strgname,score);
+            MessageBox.Show("Ihr score wurde gespeichert");
+            Restart();
+            allbvisible();
+        }
         private void allbvisible()
         {
             a.Visibility = Visibility.Visible;
@@ -142,42 +186,19 @@ namespace Hangman
             y.Visibility = Visibility.Visible;
             z.Visibility = Visibility.Visible;
         }
-
-        private void Gameover()
-        {
-            alllements.Visibility = Visibility.Collapsed;
-            allgameover.Visibility = Visibility.Visible;
-            score = 0;
-            for (int i = 0; i < word.Length; i++)
-                solution.Text += word[i] + " ";
-            
-        }
-        private void Restart()
-        {
-            score++;
-            mistakes = 0;
-            word = "";
-            hiddenword = "";
-            solution.Text = "";
-            InitializeWord();
-            ChangePicture(mistakes);
-            allbvisible();
-            alllements.Visibility = Visibility.Visible;
-            allgameover.Visibility = Visibility.Collapsed;
-        }
         #region Buchstaben buttons
 
         private void a_Click(object sender, RoutedEventArgs e)
         {
             ChooseLetter(sender, "a");
         }
-        
-         
+
+
         private void b_Click(object sender, RoutedEventArgs e)
         {
-            ChooseLetter(sender,"b");
+            ChooseLetter(sender, "b");
         }
-        
+
         private void c_Click(object sender, RoutedEventArgs e)
         {
             ChooseLetter(sender, "c");
@@ -300,17 +321,5 @@ namespace Hangman
 
 
         #endregion
-
-        private void restart_Click(object sender, RoutedEventArgs e)
-        {
-            Restart();
-        }
-
-        private void save_Click(object sender, RoutedEventArgs e)
-        {
-            string strgname = name.Text;
-            FileWriter.Write(strgname,score);
-            MessageBox.Show("Ihr score wurde gespeichert");
-        }
     }
 }
