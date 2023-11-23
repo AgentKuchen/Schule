@@ -112,20 +112,15 @@ namespace Hangman
                 int scorehelp = score+1;
                 Restart();
                 allbvisible();
-                score += scorehelp;
+                score = scorehelp;
             }
-               
-                
-                
+         
         }
-
-        
 
         private void Gameover()
         {
             alllements.Visibility = Visibility.Collapsed;
             allgameover.Visibility = Visibility.Visible;
-            score = 0;
             for (int i = 0; i < word.Length; i++)
                 solution.Text += word[i] + " ";
             
@@ -133,6 +128,7 @@ namespace Hangman
         private void Restart()
         {
             mistakes = 0;
+            score = 0;
             word = "";
             hiddenword = "";
             solution.Text = "";
@@ -154,7 +150,7 @@ namespace Hangman
         {
             string strgname = name.Text;
             FileWriter.Write(strgname,score);
-            MessageBox.Show("Ihr score wurde gespeichert");
+            MessageBox.Show("Ihr Score wurde gespeichert");
             Restart();
             allbvisible();
         }

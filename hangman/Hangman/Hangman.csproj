@@ -8,14 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="pixil-frame-1.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="pixil-frame-1.png" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Resource1.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
