@@ -59,6 +59,11 @@ namespace Hangman
 
         private void ChooseLetter(object sender, string letter)
         {
+            if (sender is Button clickedButton)
+            {
+
+                clickedButton.Visibility = Visibility.Collapsed;
+            }
             if (word.Contains(letter))
                 Replaceletter(letter);
             else
@@ -70,15 +75,11 @@ namespace Hangman
             UpdateText();
             if (mistakes == 7)
                 Gameover();
-            else if (sender is Button clickedButton)
-            {
-
-                clickedButton.Visibility = Visibility.Collapsed;
-            }
+            
         }
 
 
-        //funkt nicht
+        
         private void ChangePicture(int mistakes)
         {
             //string helper = $"/pixil-frame-{mistakes}.png";
