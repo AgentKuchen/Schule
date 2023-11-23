@@ -7,12 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Canvas>
+        <Image x:Name="image" Height="300" Width="240"  HorizontalAlignment="Left" Canvas.Left="540" VerticalAlignment="Top" Canvas.Top="10">
+        </Image>
         <Canvas x:Name="alllements">
         <TextBox BorderThickness="0" x:Name="text" FontSize="30" Width="500" Canvas.Left="70" Canvas.Top="200" TextAlignment="Center" IsReadOnly="True"></TextBox>
         <TextBox BorderThickness="0" x:Name="scoretxt" FontSize="30" Width="50" HorizontalAlignment="Left" Canvas.Top="10" VerticalAlignment="Center" Canvas.Left="10"></TextBox>
-        <Image x:Name="image" Height="300" Width="240"  HorizontalAlignment="Left" Canvas.Left="540" VerticalAlignment="Top" Canvas.Top="10">
-        </Image>
-        <!--#region Buchstaben buttons -->
+        
+           
+            <!--#region Buchstaben buttons -->
            
         <Button x:Name="a" Width="20" Height="20" Canvas.Left="10" Canvas.Top="360" Click="a_Click">A</Button>
         <Button x:Name="b" Width="20" Height="20" Canvas.Left="40" Canvas.Top="360" Click="b_Click">B</Button>
@@ -47,9 +49,9 @@
             <Button x:Name="save" Canvas.Left="237" Canvas.Top="300" Click="save_Click">Save</Button>
             <Label Canvas.Left="51" Canvas.Top="239">Gib deinen Namen ein um deinen Highscore zu speichern</Label>
             <TextBox x:Name="name" Width="100" Canvas.Left="389" Canvas.Top="247"></TextBox>
-
+            <TextBox BorderThickness="0" x:Name="solution" FontSize="30" Width="500" Canvas.Left="70" Canvas.Top="200" TextAlignment="Center" IsReadOnly="True"></TextBox>
             <Button x:Name="restart" Canvas.Left="419" Canvas.Top="300" Click="restart_Click">Restart</Button>
-            <Button></Button>
+            
         </Canvas>
     </Canvas>
 </Window>

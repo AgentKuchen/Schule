@@ -24,7 +24,7 @@ namespace Hangman
     {
         public string word = "";
         public string hiddenword = "";
-        public int mistakes = 1;
+        public int mistakes = 0;
         public int score = 0;
 
         public MainWindow()
@@ -82,7 +82,10 @@ namespace Hangman
         //funkt nicht
         private void ChangePicture(int mistakes)
         {
-            image.Source = new BitmapImage(new Uri($"../../../frames/pixil-frame-{mistakes}.png",UriKind.Relative));
+            //string helper = $"/pixil-frame-{mistakes}.png";
+            string helper = "C:\\Users\\Acer\\Desktop\\Programmieren\\C#\\Schule\\hangman\\Hangman\\frames\\pixil-frame-" + mistakes.ToString() + ".png";
+
+            image.Source = new BitmapImage(new Uri(helper, UriKind.Absolute));
         }
 
        
@@ -144,13 +147,18 @@ namespace Hangman
         {
             alllements.Visibility = Visibility.Collapsed;
             allgameover.Visibility = Visibility.Visible;
+            score = 0;
+            for (int i = 0; i < word.Length; i++)
+                solution.Text += word[i] + " ";
+            
         }
         private void Restart()
         {
-            score=0;
-            mistakes = 1;
+            score++;
+            mistakes = 0;
             word = "";
             hiddenword = "";
+            solution.Text = "";
             InitializeWord();
             ChangePicture(mistakes);
             allbvisible();
@@ -302,6 +310,7 @@ namespace Hangman
         {
             string strgname = name.Text;
             FileWriter.Write(strgname,score);
+            MessageBox.Show("Ihr score wurde gespeichert");
         }
     }
 }
