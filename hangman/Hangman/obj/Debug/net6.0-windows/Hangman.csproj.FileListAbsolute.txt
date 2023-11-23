@@ -103,3 +103,5 @@ C:\Users\Acer\Desktop\Programmieren\C#\Schule\hangman\Hangman\obj\Debug\net6.0-w
 C:\Users\Acer\Desktop\Programmieren\C#\Schule\hangman\Hangman\obj\Debug\net6.0-windows\Hangman.pdb
 C:\Users\Acer\Desktop\Programmieren\C#\Schule\hangman\Hangman\obj\Debug\net6.0-windows\Hangman.genruntimeconfig.cache
 C:\Users\Acer\Desktop\Programmieren\C#\Schule\hangman\Hangman\obj\Debug\net6.0-windows\ref\Hangman.dll
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\hangman\Hangman\obj\Debug\net6.0-windows\Hangman.Resource1.resources
+C:\Users\Acer\Desktop\Programmieren\C#\Schule\hangman\Hangman\obj\Debug\net6.0-windows\Hangman.csproj.GenerateResource.cache

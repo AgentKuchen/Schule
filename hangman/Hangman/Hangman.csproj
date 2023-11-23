@@ -8,22 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="frames\pixil-frame-1.png" />
-    <None Remove="frames\pixil-frame-2.png" />
-    <None Remove="frames\pixil-frame-3.png" />
-    <None Remove="frames\pixil-frame-4.png" />
-    <None Remove="frames\pixil-frame-5.png" />
-    <None Remove="frames\pixil-frame-6.png" />
-    <None Remove="pixil-frame-0.png" />
+    <Compile Update="Resource1.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="frames\pixil-frame-1.png" />
-    <Resource Include="frames\pixil-frame-2.png" />
-    <Resource Include="frames\pixil-frame-3.png" />
-    <Resource Include="frames\pixil-frame-4.png" />
-    <Resource Include="frames\pixil-frame-5.png" />
-    <Resource Include="frames\pixil-frame-6.png" />
+    <EmbeddedResource Update="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

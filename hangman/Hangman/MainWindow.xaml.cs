@@ -31,7 +31,7 @@ namespace Hangman
         {
             InitializeComponent();
             InitializeWord();
-            ChangePicture(mistakes);
+            
         }
 
 
@@ -82,10 +82,7 @@ namespace Hangman
         //funkt nicht
         private void ChangePicture(int mistakes)
         {
-            
-           
-            
-            image.Source = new BitmapImage(new Uri($"frames/pixil-frame-{mistakes}.png"));
+            image.Source = new BitmapImage(new Uri($"../../../frames/pixil-frame-{mistakes}.png",UriKind.Relative));
         }
 
        
@@ -108,15 +105,7 @@ namespace Hangman
             hiddenword = newHiddenword;
             //erkennen ob spiel gewonnen ist
             if (!hiddenword.Contains("_"))
-            {
-                score++;
-                mistakes = 1;
-                word = "";
-                hiddenword = "";
-                allbvisible();
-                InitializeWord();
-                ChangePicture(mistakes);
-            }
+                Restart();
                 
                 
         }
@@ -155,6 +144,16 @@ namespace Hangman
         {
             alllements.Visibility = Visibility.Collapsed;
             allgameover.Visibility = Visibility.Visible;
+        }
+        private void Restart()
+        {
+            score++;
+            mistakes = 1;
+            word = "";
+            hiddenword = "";
+            InitializeWord();
+            ChangePicture(mistakes);
+            allbvisible();
         }
         #region Buchstaben buttons
 
@@ -288,8 +287,18 @@ namespace Hangman
         {
             ChooseLetter(sender, "z");
         }
-        
+
 
         #endregion
+
+        private void restart_Click(object sender, RoutedEventArgs e)
+        {
+            Restart();
+        }
+
+        private void save_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -44,11 +44,11 @@
         <!--#endregion-->
         </Canvas>
         <Canvas x:Name="allgameover" Visibility="Collapsed">
-            <Button x:Name="save" Canvas.Left="237" Canvas.Top="300" >Save</Button>
+            <Button x:Name="save" Canvas.Left="237" Canvas.Top="300" Click="save_Click">Save</Button>
             <Label Canvas.Left="51" Canvas.Top="239">Gib deinen Namen ein um deinen Highscore zu speichern</Label>
             <TextBox x:Name="name" Width="100" Canvas.Left="389" Canvas.Top="247"></TextBox>
 
-            <Button x:Name="restart" Canvas.Left="419" Canvas.Top="300">Restart</Button>
+            <Button x:Name="restart" Canvas.Left="419" Canvas.Top="300" Click="restart_Click">Restart</Button>
             <Button></Button>
         </Canvas>
     </Canvas>
