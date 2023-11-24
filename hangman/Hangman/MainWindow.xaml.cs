@@ -26,6 +26,7 @@ namespace Hangman
         public string hiddenword = "";
         public int mistakes = 0;
         public int score = 0;
+       
 
         public MainWindow()
         {
@@ -52,7 +53,11 @@ namespace Hangman
             for(int i = 0; i < hiddenword.Length; i++)
                 text.Text += hiddenword[i]+" ";
 
-            scoretxt.Text=score.ToString();
+            string helper = "Highscore: " + FileReader.hightscoreRead();
+
+            highscoretxt.Text = helper;
+            helper = "Your Score: " + score.ToString();
+            scoretxt.Text=helper;
             
         }
 
